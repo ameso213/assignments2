@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Value Logger</title>
+</head>
+<body>
+
+<!-- HTML text input element -->
+<input type="text" id="myInput" oninput="logInputValue()">
+
+<script>
+    // JavaScript function to log the input value
+    function logInputValue() {
+        // Get the input element by its ID
+        const inputElement = document.getElementById('myInput');
+        
+        // Log the current value of the input
+        console.log("Input value:", inputElement.value);
+    }
+</script>
+
+</body>
+</html>
+Explanation:
+
+HTML Input Element:
+
+The <input> element with type="text" is used to create a text input.
+The id attribute is set to "myInput" to uniquely identify the input element.
+oninput Attribute:
+
+The oninput attribute is used to specify a JavaScript function (logInputValue()) that should be called when the input value changes. This event is triggered whenever the user types in the input field.
+JavaScript Function:
+
+The logInputValue function is defined in the <script> section.
+Inside the function, document.getElementById('myInput') is used to get a reference to the input element with the ID "myInput".
+inputElement.value retrieves the current value of the input.
+console.log is used to log the input value to the browser's console.
+Now, whenever you type into the text input, the logInputValue function will be called, and the input value will be logged to the console. You can open the browser's developer tools (usually by pressing F12 or right-clicking on the page and selecting "Inspect") to view the console output.
+
+
+
+
+
